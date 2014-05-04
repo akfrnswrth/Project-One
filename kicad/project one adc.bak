@@ -33,9 +33,9 @@ LIBS:project one
 LIBS:project one-cache
 EELAYER 27 0
 EELAYER END
-$Descr USLetter 11000 8500
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 4 4
 Title "Project One"
 Date "4 may 2014"
 Rev "0.0.0"
@@ -45,22 +45,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 600  650  1500 300 
-U 53652B7B
-F0 "Power supplies" 50
-F1 "project one power supplies.sch" 50
-$EndSheet
-$Sheet
-S 3950 3100 2000 1250
-U 5365F364
-F0 "MPU" 50
-F1 "project one mpu.sch" 50
-$EndSheet
-$Sheet
-S 1050 2500 1400 1100
-U 536732E3
-F0 "ADC" 50
-F1 "project one adc.sch" 50
-$EndSheet
 $EndSCHEMATC
