@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "Project One"
-Date "3 may 2014"
+Date "4 may 2014"
 Rev "0.0.0"
 Comp "Ali Kocaturk"
 Comment1 ""
@@ -199,19 +199,19 @@ Wire Wire Line
 Wire Wire Line
 	5650 1750 5650 1800
 Wire Wire Line
-	5550 1800 5550 1750
+	5550 1750 5550 1800
 Connection ~ 5550 1750
 Wire Wire Line
-	5350 1800 5350 1750
+	5350 1750 5350 1800
 Connection ~ 5350 1750
 Wire Wire Line
-	5250 1800 5250 1750
+	5250 1750 5250 1800
 Connection ~ 5250 1750
 Wire Wire Line
-	5150 1800 5150 1750
+	5150 1750 5150 1800
 Connection ~ 5150 1750
 Wire Wire Line
-	5450 1800 5450 1750
+	5450 1750 5450 1800
 Connection ~ 5450 1750
 Wire Wire Line
 	1800 1500 2550 1500
@@ -236,7 +236,7 @@ Wire Wire Line
 	2250 1950 2250 2000
 Connection ~ 2250 2000
 Wire Wire Line
-	5050 1750 5650 1750
+	4750 1750 5650 1750
 Wire Wire Line
 	6350 1350 6350 1800
 Wire Wire Line
@@ -328,4 +328,94 @@ Wire Wire Line
 	4350 3300 4350 3250
 Wire Wire Line
 	4350 3250 4400 3250
+Text Label 6900 4900 2    60   ~ 0
+IISC_ISDO
+Wire Wire Line
+	6400 4900 6900 4900
+Text Label 6900 5000 2    60   ~ 0
+IISC_ISDI
+Text Label 6900 5100 2    60   ~ 0
+IISC_IMCK
+Text Label 6900 5200 2    60   ~ 0
+IISC_ISCK
+Wire Wire Line
+	6900 5000 6400 5000
+Wire Wire Line
+	6900 5100 6400 5100
+Wire Wire Line
+	6900 5200 6400 5200
+Text Label 3950 5400 0    60   ~ 0
+SPI_MOSI
+Text Label 3950 5300 0    60   ~ 0
+SPI_MISO
+Text Label 3950 5200 0    60   ~ 0
+SPI_SCK
+Wire Wire Line
+	3950 5200 4400 5200
+Wire Wire Line
+	3950 5300 4400 5300
+Wire Wire Line
+	3950 5400 4400 5400
+$Comp
+L SW_PUSH SW?
+U 1 1 53658E53
+P 3950 2150
+F 0 "SW?" H 4100 2260 50  0000 C CNN
+F 1 "RESET" H 3950 2070 50  0000 C CNN
+F 2 "~" H 3950 2150 60  0000 C CNN
+F 3 "~" H 3950 2150 60  0000 C CNN
+	1    3950 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 53658E60
+P 3950 2550
+F 0 "#PWR?" H 3950 2550 30  0001 C CNN
+F 1 "GND" H 3950 2480 30  0001 C CNN
+F 2 "" H 3950 2550 60  0000 C CNN
+F 3 "" H 3950 2550 60  0000 C CNN
+	1    3950 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2450 3950 2550
+$Comp
+L R R?
+U 1 1 53658EAF
+P 4500 1750
+F 0 "R?" V 4580 1750 40  0000 C CNN
+F 1 "10k" V 4507 1751 40  0000 C CNN
+F 2 "~" V 4430 1750 30  0000 C CNN
+F 3 "~" H 4500 1750 30  0000 C CNN
+	1    4500 1750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5050 1750
+Wire Wire Line
+	3950 1750 4250 1750
+Wire Wire Line
+	3950 1750 3950 1850
+$Comp
+L CSMALL C?
+U 1 1 53658FA3
+P 4150 2350
+F 0 "C?" H 4175 2400 30  0000 L CNN
+F 1 "0.1uF" H 4175 2300 30  0000 L CNN
+F 2 "~" H 4150 2350 60  0000 C CNN
+F 3 "~" H 4150 2350 60  0000 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1750 4150 2250
+Wire Wire Line
+	4150 2150 4400 2150
+Connection ~ 4150 1750
+Connection ~ 4150 2150
+Wire Wire Line
+	3950 2500 4150 2500
+Wire Wire Line
+	4150 2500 4150 2450
+Connection ~ 3950 2500
 $EndSCHEMATC
