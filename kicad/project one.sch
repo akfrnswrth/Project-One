@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 6
 Title "Project One"
-Date "5 may 2014"
+Date "6 may 2014"
 Rev "0.0.0"
 Comp "Ali Kocaturk"
 Comment1 ""
@@ -101,7 +101,7 @@ Wire Bus Line
 Wire Bus Line
 	3650 4500 6700 4500
 Wire Bus Line
-	6700 4500 6700 3550
+	6700 3550 6700 5400
 Wire Bus Line
 	6700 3550 7100 3550
 Wire Wire Line
@@ -113,5 +113,31 @@ S 7100 4850 1750 1450
 U 5367165F
 F0 "Amplifier" 50
 F1 "project one amplifier.sch" 50
+F2 "HP_DETECT" O L 7100 6200 60 
+F3 "SPK_FAULT" O L 7100 6100 60 
+F4 "SPK_SD" I L 7100 6000 60 
+F5 "TWIMS0" B L 7100 5550 60 
+F6 "IISC" B L 7100 5400 60 
+F7 "DR_MUTE" I L 7100 5900 60 
+F8 "HP_IN L" I L 7100 4950 60 
+F9 "HP_IN R" I L 7100 5050 60 
 $EndSheet
+Wire Wire Line
+	7100 4950 7000 4950
+Wire Wire Line
+	7000 4950 7000 4050
+Wire Wire Line
+	7000 4050 7100 4050
+Wire Wire Line
+	7100 4150 6900 4150
+Wire Wire Line
+	6900 4150 6900 5050
+Wire Wire Line
+	6900 5050 7100 5050
+Wire Bus Line
+	6700 5400 7100 5400
+Wire Bus Line
+	7100 5550 3500 5550
+Wire Bus Line
+	3500 5550 3500 3700
 $EndSCHEMATC
